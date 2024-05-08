@@ -1,0 +1,73 @@
+/*Mensaje enviado por el otro*/
+.module-message{
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-sizing:border-box;
+    background-color: #f0f0f0;
+    height: min-content;
+    width: fit-content;
+    max-width: 60%;
+    min-width: min-content;
+}
+
+.module-message .message{
+    width: 100%;
+    margin:0%;
+    font-size:medium;
+    color: #000000;
+    direction: ltr;
+}
+
+.module-message .hora{
+    margin:0%;
+    font-size: 11px;
+    color: #666;
+    text-align: left;
+}
+
+/*Estilo mensajes enviados por mi*/
+.module-message-me{
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-sizing:border-box;
+    background-color: #7d36b0;
+    align-self: flex-end;
+    height: min-content;
+    width: fit-content;
+    max-width: 60%;
+    min-width: min-content;
+}
+.module-message-me .message{
+    margin:0%;
+    font-size: medium;
+    color: #fff;
+    direction: rtl;
+}
+
+.div-request{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-request .hora{
+    margin:0%;
+    padding: 1%;
+    font-size: 11px;
+    color: #e0d4d4;
+    bottom: -3px;
+    text-align: right;
+}
+
+.div-response{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-response .hora{
+    margin:0%;
+    padding: 1%;
+    font-size: 11px;
+    color: #e0d4d4;
+    bottom: -3px;
+    text-align: left;
+}

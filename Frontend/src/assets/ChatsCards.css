@@ -1,0 +1,117 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --grey: #999;
+  --dark: #1a1a1a;
+  --light: #e6e6e6;
+  --hoverColor: #9500ff;
+}
+
+.section-chats {
+  box-sizing: border-box;
+  width: 100%;
+  list-style: none;
+}
+
+.section-chat-user {
+  box-sizing: border-box;
+  margin-left: -40px;
+  position: relative;
+  padding: 12px 10% 16px;
+  cursor: pointer;
+}
+
+/* Linea de división de chats: */
+.section-chat-user:after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 80%;
+  height: 1px;
+  content: "";
+  background-color: var(--light);
+}
+
+.section-chat-user img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-chat-texts {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-chat-name {
+  font-size: larger;
+  line-height: 22px;
+  color: var(--white);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+.section-chat-message {
+  font-size: 14px;
+  display: inline-block;
+  overflow: hidden !important;
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--grey);
+}
+
+.section-chat-hour {
+  font-size: 14px;
+  position: absolute;
+  top: 16px;
+  right: 10%;
+  color: var(--grey);
+}
+
+.section-chat-user{
+  display: flex;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+}
+
+
+.section-chat-user.active, 
+.section-chat-user:hover {
+  background-color: var(--hoverColor);
+  width: auto;
+}
+
+.section-chat-user.active span, 
+.section-chat-user:hover span {
+  font-size: x-large;
+  color: var(--white);
+  background: transparent;
+}
+
+.section-chat-user.active .section-chat-img, 
+.section-chat-user:hover .section-chat-img {
+  background-color: rgb(60, 19, 225);
+  border: 2px rgb(60, 19, 225) solid;
+}
+.section-chat-user.active:after, 
+.section-chat-user:hover:after {
+  display: none;
+}
+
+.section-chat-img {
+  padding: 20px;
+  border: 2px white solid;
+  border-radius: 50%;
+  
+}
